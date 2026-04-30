@@ -1,0 +1,14 @@
+{
+  "name": "athora-website",
+  "version": "1.0.0",
+  "description": "ATHORA premium activewear ecommerce site with admin CMS",
+  "main": "server.js",
+  "scripts": {
+    "dev": "node server.js",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "express-session": "^1.18.0"
+  }
+}

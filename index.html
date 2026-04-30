@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATHORA | Premium Performance Wear</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- GSAP for Cinematic Scroll Animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+<body>
+
+    <!-- Announcement Bar -->
+    <div class="announcement-bar">
+        Welcome to our store
+    </div>
+
+    <!-- Header -->
+    <div class="header-container">
+        <header class="header-pill" id="header">
+            <div class="header-left">
+                <a href="index.html" class="nav-logo-pill">A</a>
+                <nav class="nav-menu">
+                    <div class="nav-item">Shop <span class="chevron">⌄</span></div>
+                    <div class="nav-item">Collections <span class="chevron">⌄</span></div>
+                    <div class="nav-item">Page <span class="chevron">⌄</span></div>
+                    <a href="#" class="nav-item">Blog</a>
+                    <div class="nav-item">Theme <span class="chevron">⌄</span></div>
+                </nav>
+            </div>
+            
+            <div class="header-right">
+                <div class="lang-selector">
+                    <img src="https://flagcdn.com/w20/us.png" alt="US">
+                    USD $ / EN <span class="chevron">⌄</span>
+                </div>
+                <div class="header-icons">
+                    <a href="#" class="header-icon">🔍</a>
+                    <a href="#" class="header-icon">👤</a>
+                    <a href="#" class="header-icon">🛍️</a>
+                </div>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECTION 1: Hero Video Scaling Down -->
+    <section class="hero-scroll-container" id="hero-scroll-container">
+        <div class="hero-video-wrapper" id="hero-video-wrapper">
+            <div class="hero-slides">
+                <div class="hero-slide active" style="background-image: url('assets/hero.png');"></div>
+                <div class="hero-slide" style="background-image: url('assets/activity-run.png');"></div>
+                <div class="hero-slide" style="background-image: url('assets/zoom-image.png');"></div>
+            </div>
+            <div class="hero-overlay"></div>
+            
+            <div class="hero-text-overlay" id="hero-text">
+                <h1 class="hero-title">Active training<br>collection</h1>
+                <p>Elevate every workout with our high-performance training essentials.</p>
+                <a href="#" class="btn-pill btn-creative" style="margin-top: 1rem;">Shop collection ➔</a>
+            </div>
+
+            <!-- Video controls corner -->
+            <div class="hero-controls">
+                <button class="control-btn" id="hero-prev">←</button>
+                <div class="hero-dots">
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+                <button class="control-btn" id="hero-next">→</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 2: Shop by category (Horizontal Scroll with 3D) -->
+    <section class="shop-category-section" id="shop-category-section">
+        <div class="shop-category-pinned" id="shop-category-pinned">
+            
+            <div class="category-left-text">
+                <h2 style="font-size: 4rem; margin-bottom: 0.5rem; text-transform: uppercase; letter-spacing: -2px;">Shop by category</h2>
+                <p style="color: var(--color-text-muted); margin-bottom: 1.5rem; max-width: 400px;">For a short time only, grab your favorite activewear pieces at unbeatable prices</p>
+                <a href="#" class="btn-pill btn-dark btn-creative">All categories ➔</a>
+            </div>
+
+            <div class="category-cards-wrapper" id="category-cards-wrapper">
+                <div class="cat-card">
+                    <img src="assets/hero.png" alt="All products">
+                    <div class="cat-card-label">All products</div>
+                </div>
+                <div class="cat-card">
+                    <img src="assets/hero.png" alt="Best seller">
+                    <div class="cat-card-label">Best seller</div>
+                </div>
+                <div class="cat-card">
+                    <img src="assets/hero.png" alt="Yoga & Pilates">
+                    <div class="cat-card-label">Yoga & Pilates</div>
+                </div>
+                <div class="cat-card">
+                    <img src="assets/hero.png" alt="Running gear">
+                    <div class="cat-card-label">Running gear</div>
+                </div>
+                <div class="cat-card">
+                    <img src="assets/hero.png" alt="Leggings">
+                    <div class="cat-card-label">Leggings</div>
+                </div>
+                <div class="cat-card">
+                    <img src="assets/hero.png" alt="Joggers & Sweatpants">
+                    <div class="cat-card-label">Joggers & Sweatpants</div>
+                </div>
+                <div class="cat-card">
+                    <img src="assets/hero.png" alt="Outerwear">
+                    <div class="cat-card-label">Outerwear</div>
+                </div>
+                <div class="cat-card">
+                    <img src="assets/hero.png" alt="Accessories">
+                    <div class="cat-card-label">Accessories</div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SECTION 3: Built to perform -->
+    <section class="built-to-perform-section section-padding container">
+        <div class="large-card" style="position: relative; height: 80vh; border-radius: 40px; overflow: hidden;">
+            <div class="bg-image" style="background-image: url('assets/hero.png'); width: 100%; height: 100%; background-size: cover; background-position: center;"></div>
+            <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; color: white;">
+                <h2 style="font-size: 4rem; text-align: center;">Built to perform<br>designed to inspire</h2>
+                <p style="margin-top: 1rem;">Sweat-wicking, ultra-flexible, and made for every workout.</p>
+                <a href="#" class="btn-pill btn-creative" style="margin-top: 2rem;">Shop now ➔</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 4: Marquee -->
+    <div class="marquee-v2">
+        <div class="marquee-content">
+            <div class="marquee-item">
+                <span>Welcome to our store</span>
+                <div class="marquee-circle"><img src="assets/category-1.png"></div>
+                <span>Performance</span>
+                <div class="marquee-circle"><img src="assets/product-1.png"></div>
+                <span>Welcome to our store</span>
+                <div class="marquee-circle"><img src="assets/category-1.png"></div>
+                <span>Performance</span>
+                <div class="marquee-circle"><img src="assets/product-1.png"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SECTION 5: Shop the Look -->
+    <section class="shop-the-look-section section-padding container" style="display: flex; gap: 4rem; position: relative;">
+        
+        <!-- Left Side: Hotspots -->
+        <div style="flex: 1; position: relative;">
+            <div class="thumbnail-list" style="position: absolute; left: -80px; top: 50%; transform: translateY(-50%); display: flex; flex-direction: column; gap: 1rem;">
+                <div class="thumb-circle active" style="width: 60px; height: 60px; border-radius: 50%; overflow: hidden; border: 2px solid var(--color-primary); padding: 2px;"><img src="assets/hero.png" style="width:100%; height:100%; border-radius:50%; object-fit: cover;"></div>
+                <div class="thumb-circle" style="width: 60px; height: 60px; border-radius: 50%; overflow: hidden; background: #eee;"><img src="assets/hero.png" style="width:100%; height:100%; border-radius:50%; object-fit: cover; opacity:0.6;"></div>
+            </div>
+            
+            <div class="large-card" style="height: 80vh; border-radius: 40px; overflow: hidden; position: relative;">
+                <img src="assets/hero.png" style="width: 100%; height: 100%; object-fit: cover;">
+                <!-- Hotspots -->
+                <div class="hotspot" style="top: 40%; left: 40%;"></div>
+                <div class="hotspot" style="top: 60%; left: 60%;"></div>
+            </div>
+        </div>
+
+        <!-- Right Side: Product Info -->
+        <div style="width: 400px; display: flex; flex-direction: column;">
+            <div style="margin-bottom: 2rem;">
+                <p style="color: var(--color-text-muted); font-size: 0.9rem;">Shop the look</p>
+                <h2 style="font-size: 3rem; line-height: 1.1; margin-top: 0.5rem;">Unleash your<br>style potentia</h2>
+            </div>
+            
+            <div class="product-mini-card" style="background: white; border: 1px solid var(--color-gray-200); border-radius: 20px; overflow: hidden;">
+                <div style="height: 300px; background: #eee;">
+                    <img src="assets/hero.png" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+                <div style="padding: 1.5rem;">
+                    <p style="font-size: 0.7rem; color: var(--color-text-muted); text-transform: uppercase;">Modemosaic</p>
+                    <h3 style="font-size: 1.2rem; margin: 0.5rem 0;">Ruby sports bra</h3>
+                    <p style="font-weight: 600;">$150.00</p>
+                    
+                    <div style="display: flex; gap: 0.5rem; margin-top: 1rem;">
+                        <span style="width: 15px; height: 15px; border-radius: 50%; background: #e67e22; border: 2px solid white; outline: 1px solid black;"></span>
+                        <span style="width: 15px; height: 15px; border-radius: 50%; background: #2c3e50;"></span>
+                        <span style="width: 15px; height: 15px; border-radius: 50%; background: #000;"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- SECTION 6: Our science-backed products -->
+    <section class="section-padding container text-center">
+        <h2 style="font-size: 3rem; margin-bottom: 2rem;">Our science-backed products</h2>
+        
+        <!-- Filter Bar like in 01.png -->
+        <div class="product-filters" style="display: flex; justify-content: center; gap: 1rem; margin-bottom: 3rem;">
+            <div class="filter-btn active" style="background: #4A3A3D; color: white; padding: 0.8rem 1.5rem; border-radius: 50px; display: flex; align-items: center; gap: 0.5rem; cursor: pointer; font-weight: 600;">
+                <img src="assets/ruby-bra.png" style="width: 25px; height: 25px; border-radius: 50%; object-fit: cover;">
+                Sports bras
+            </div>
+            <div class="filter-btn" style="background: #f7f7f7; padding: 0.8rem 1.5rem; border-radius: 50px; display: flex; align-items: center; gap: 0.5rem; cursor: pointer; font-weight: 600;">
+                <img src="assets/activity-swim.png" style="width: 25px; height: 25px; border-radius: 50%; object-fit: cover;">
+                Swimwear
+            </div>
+            <div class="filter-btn" style="background: #f7f7f7; padding: 0.8rem 1.5rem; border-radius: 50px; display: flex; align-items: center; gap: 0.5rem; cursor: pointer; font-weight: 600;">
+                <img src="assets/activity-run.png" style="width: 25px; height: 25px; border-radius: 50%; object-fit: cover;">
+                Trending now
+            </div>
+        </div>
+        
+        <div class="grid" style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem;">
+            <!-- Product 1 -->
+            <div class="product-card">
+                <div class="product-image-container">
+                    <img src="assets/activity-run.png" class="main-img" alt="Coral sports bra">
+                    <img src="assets/ruby-bra.png" class="hover-img" alt="Coral sports bra hover">
+                    <div class="quick-view-btn">Quick view</div>
+                    <span class="badge" style="position: absolute; top: 1rem; right: 1rem; background: #96B786; color: white; padding: 0.2rem 0.8rem; border-radius: 5px; font-size: 0.7rem; font-weight: 700;">NEW</span>
+                </div>
+                <div class="product-info" style="text-align: left; padding: 1.5rem 0;">
+                    <p class="brand-tag">Flexora</p>
+                    <h3 class="product-title">Coral sports bra</h3>
+                    <p class="product-price">$180.00</p>
+                    <div class="color-swatches">
+                        <span class="swatch" style="background: #E5C7C3;"></span>
+                        <span class="swatch" style="background: #000;"></span>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 2 -->
+            <div class="product-card">
+                <div class="product-image-container">
+                    <img src="assets/activity-gym.png" class="main-img" alt="Ruby sports bra">
+                    <img src="assets/jumpsuit.png" class="hover-img" alt="Ruby sports bra hover">
+                    <div class="quick-view-btn">Quick view</div>
+                </div>
+                <div class="product-info" style="text-align: left; padding: 1.5rem 0;">
+                    <p class="brand-tag">Modemosaic</p>
+                    <h3 class="product-title">Ruby sports bra</h3>
+                    <p class="product-price">$150.00</p>
+                    <div class="color-swatches">
+                        <span class="swatch" style="background: #FF7B00;"></span>
+                        <span class="swatch" style="background: #332124;"></span>
+                        <span class="swatch" style="background: #000;"></span>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 3 -->
+            <div class="product-card">
+                <div class="product-image-container">
+                    <img src="assets/ruby-bra.png" class="main-img" alt="Emerald sports bra">
+                    <img src="assets/activity-pilates.png" class="hover-img" alt="Emerald sports bra hover">
+                    <div class="quick-view-btn">Quick view</div>
+                </div>
+                <div class="product-info" style="text-align: left; padding: 1.5rem 0;">
+                    <p class="brand-tag">Flexora</p>
+                    <h3 class="product-title">Emerald sports bra</h3>
+                    <p class="product-price">$150.00</p>
+                    <div class="color-swatches">
+                        <span class="swatch" style="background: #4B3B42;"></span>
+                        <span class="swatch" style="background: #1B263B;"></span>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 4 -->
+            <div class="product-card">
+                <div class="product-image-container">
+                    <img src="assets/activity-pilates.png" class="main-img" alt="Jade sports bra">
+                    <img src="assets/activity-swim.png" class="hover-img" alt="Jade sports bra hover">
+                    <div class="quick-view-btn">Quick view</div>
+                </div>
+                <div class="product-info" style="text-align: left; padding: 1.5rem 0;">
+                    <p class="brand-tag">Flexora</p>
+                    <h3 class="product-title">Jade sports bra</h3>
+                    <p class="product-price">$250.00</p>
+                    <div class="color-swatches">
+                        <span class="swatch" style="background: #8E9B97;"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 7: Exclusive Offers -->
+    <section class="section-padding">
+        <div style="background: var(--color-black); color: white; border-radius: 40px; padding: 5rem; display: flex; gap: 4rem; position: relative; overflow: hidden; height: 80vh;" class="container">
+            <div style="flex: 1; z-index: 1;">
+                <div style="display: inline-flex; align-items: center; gap: 0.5rem; background: rgba(255,255,255,0.1); padding: 0.5rem 1rem; border-radius: 30px; margin-bottom: 2rem;">
+                    <span>🔥</span> <span style="font-size: 0.8rem;">Limited-time deals</span>
+                </div>
+                <h2 style="font-size: 4rem; line-height: 1.1; margin-bottom: 1.5rem;">Don't miss out on<br>these exclusive offers</h2>
+                <p style="opacity: 0.8; margin-bottom: 3rem;">For a short time only, grab your favorite activewear pieces at unbeatable prices</p>
+                
+                <div style="display: flex; gap: 1rem; margin-bottom: 3rem;">
+                    <div style="background: rgba(255,255,255,0.2); padding: 1.5rem; border-radius: 15px; text-align: center; min-width: 80px;">
+                        <div style="font-size: 2.5rem; font-weight: 600;">99</div>
+                        <div style="font-size: 0.8rem; opacity: 0.8;">Days</div>
+                    </div>
+                    <div style="background: rgba(255,255,255,0.2); padding: 1.5rem; border-radius: 15px; text-align: center; min-width: 80px;">
+                        <div style="font-size: 2.5rem; font-weight: 600;">16</div>
+                        <div style="font-size: 0.8rem; opacity: 0.8;">Hours</div>
+                    </div>
+                    <div style="background: rgba(255,255,255,0.2); padding: 1.5rem; border-radius: 15px; text-align: center; min-width: 80px;">
+                        <div style="font-size: 2.5rem; font-weight: 600;">00</div>
+                        <div style="font-size: 0.8rem; opacity: 0.8;">Minute</div>
+                    </div>
+                    <div style="background: rgba(255,255,255,0.2); padding: 1.5rem; border-radius: 15px; text-align: center; min-width: 80px;">
+                        <div style="font-size: 2.5rem; font-weight: 600;">10</div>
+                        <div style="font-size: 0.8rem; opacity: 0.8;">Seconds</div>
+                    </div>
+                </div>
+
+                <a href="#" class="btn-pill btn-creative">Shop now ➔</a>
+            </div>
+            <div style="position: absolute; top: 0; right: 0; width: 60%; height: 100%; background-image: url('assets/hero.png'); background-size: cover; background-position: center; z-index: 0; opacity: 0.8; border-radius: 40px 0 0 40px;"></div>
+        </div>
+    </section>
+
+    <!-- SECTION 8: Featured Product (Jumpsuit) -->
+    <section class="section-padding container" style="display: flex; gap: 4rem;">
+        <!-- Thumbnails -->
+        <div style="display: flex; flex-direction: column; gap: 1rem; width: 80px;" class="product-thumbnails">
+            <div class="thumb-item active" data-img="assets/jumpsuit-1.png"><img src="assets/hero.png" style="width:100%; height:100%; object-fit:cover; border-radius: 10px;"></div>
+            <div class="thumb-item" data-img="assets/jumpsuit-2.png"><img src="assets/hero.png" style="width:100%; height:100%; object-fit:cover; border-radius: 10px;"></div>
+            <div class="thumb-item" data-img="assets/jumpsuit-3.png"><img src="assets/hero.png" style="width:100%; height:100%; object-fit:cover; border-radius: 10px;"></div>
+            <div class="thumb-item" data-img="assets/jumpsuit-4.png"><img src="assets/hero.png" style="width:100%; height:100%; object-fit:cover; border-radius: 10px;"></div>
+        </div>
+
+        <!-- Main Image with Hover Zoom -->
+        <div style="flex: 1; height: 70vh; background: #f7f7f7; border-radius: 20px; overflow: hidden; position: relative;">
+            <img id="main-product-img" src="assets/jumpsuit.png" style="width: 100%; height: 100%; object-fit: contain;">
+        </div>
+
+        <!-- Product Details -->
+        <div style="width: 380px; display: flex; flex-direction: column;" class="product-sidebar-compact">
+            <p style="font-size: 0.8rem; color: var(--color-text-muted); background: #eee; display: inline-block; padding: 0.1rem 0.4rem; border-radius: 5px; width: fit-content; margin-bottom: 0.5rem;">Modemosaic</p>
+            <h2 style="font-size: 1.8rem; margin: 0.5rem 0;">Breezeflow midi jumpsuit dress</h2>
+            <p style="font-size: 1.2rem; font-weight: 600; margin-bottom: 1rem;">$120.00</p>
+            
+            <p style="color: var(--color-text-muted); font-size: 0.8rem; line-height: 1.4; margin-bottom: 1rem;">Combining the fluidity of a dress with the ease of a jumpsuit, this piece is designed for ultimate versatility. Whether you're flowing through yoga or stepping out for brunch, its sweat-wicking, ultra-soft fabric keeps you comfortable and effortlessly stylish.</p>
+
+            <!-- Deal Box -->
+            <div class="deal-box" style="background: var(--color-black); color: white; padding: 1rem; border-radius: 12px; margin-bottom: 1rem; display: flex; justify-content: space-between; align-items: center;">
+                <div>
+                    <h4 style="margin-bottom: 0.3rem; font-size: 0.9rem;">Don't miss the deal</h4>
+                    <div style="display: flex; gap: 0.5rem; align-items: center;">
+                        <span style="font-weight: 700; font-size: 0.8rem;">SALE30%</span>
+                        <button style="background: white; color: black; border: none; padding: 0.1rem 0.4rem; border-radius: 4px; font-size: 0.6rem; cursor: pointer;">Copy</button>
+                    </div>
+                </div>
+                <div style="display: flex; gap: 0.3rem;">
+                    <div style="background: white; color: black; padding: 0.3rem; border-radius: 6px; text-align: center; min-width: 35px;">
+                        <div style="font-weight: 700; font-size: 0.7rem;">00</div><div style="font-size: 0.5rem;">Days</div>
+                    </div>
+                    <div style="background: white; color: black; padding: 0.3rem; border-radius: 6px; text-align: center; min-width: 35px;">
+                        <div style="font-weight: 700; font-size: 0.7rem;">00</div><div style="font-size: 0.5rem;">Hrs</div>
+                    </div>
+                    <div style="background: white; color: black; padding: 0.3rem; border-radius: 6px; text-align: center; min-width: 35px;">
+                        <div style="font-weight: 700; font-size: 0.7rem;">00</div><div style="font-size: 0.5rem;">Min</div>
+                    </div>
+                    <div style="background: white; color: black; padding: 0.3rem; border-radius: 6px; text-align: center; min-width: 35px;">
+                        <div style="font-weight: 700; font-size: 0.7rem;">00</div><div style="font-size: 0.5rem;">Sec</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="variant-selector" style="margin-bottom: 0.6rem;">
+                <p style="font-weight: 600; margin-bottom: 0.2rem; font-size: 0.75rem;">Color: <span style="font-weight: 400;">Black</span></p>
+                <div style="display: flex; gap: 0.3rem;">
+                    <span style="width: 18px; height: 18px; border-radius: 50%; background: #000; outline: 1px solid #000; border: 2px solid white;"></span>
+                    <span style="width: 18px; height: 18px; border-radius: 50%; background: #ecf0f1; border: 1px solid #ddd;"></span>
+                </div>
+            </div>
+
+            <div class="variant-selector" style="margin-bottom: 0.8rem;">
+                <div style="display: flex; justify-content: space-between; margin-bottom: 0.2rem;">
+                    <p style="font-weight: 600; font-size: 0.75rem;">Size: <span style="font-weight: 400;">XS</span></p>
+                    <a href="#" style="font-size: 0.65rem; text-decoration: underline;">Size guide</a>
+                </div>
+                <div style="display: flex; gap: 0.3rem; flex-wrap: wrap;">
+                    <div style="border: 1px solid var(--color-black); padding: 0.2rem 0.6rem; border-radius: 4px; font-size: 0.75rem;">XS</div>
+                    <div style="border: 1px solid var(--color-gray-200); padding: 0.2rem 0.6rem; border-radius: 4px; font-size: 0.75rem; color: var(--color-text-muted);">S</div>
+                    <div style="border: 1px solid var(--color-gray-200); padding: 0.2rem 0.6rem; border-radius: 4px; font-size: 0.75rem; color: var(--color-text-muted);">M</div>
+                    <div style="border: 1px solid var(--color-gray-200); padding: 0.2rem 0.6rem; border-radius: 4px; font-size: 0.75rem; color: var(--color-text-muted);">L</div>
+                    <div style="border: 1px solid var(--color-gray-200); padding: 0.2rem 0.6rem; border-radius: 4px; font-size: 0.75rem; color: var(--color-text-muted);">XL</div>
+                </div>
+            </div>
+
+            <!-- Quantity & Add to Cart -->
+            <div style="display: flex; gap: 0.6rem; margin-bottom: 0.6rem;">
+                <div style="display: flex; border: 1px solid var(--color-gray-200); border-radius: 20px; padding: 0.2rem 0.6rem; align-items: center; gap: 0.6rem; font-size: 0.8rem;">
+                    <span style="cursor: pointer;">-</span>
+                    <span>1</span>
+                    <span style="cursor: pointer;">+</span>
+                </div>
+                <button class="btn-pill btn-creative" style="flex: 1; background: var(--color-announcement); color: white; border: none; border-radius: 20px; font-weight: 600; font-size: 0.8rem; padding: 0.4rem;">Add to cart</button>
+            </div>
+            <button class="btn-pill btn-creative" style="width: 100%; background: white; border: 1px solid var(--color-black); color: black; border-radius: 20px; padding: 0.5rem; font-weight: 600; font-size: 0.8rem; margin-bottom: 0.6rem; cursor: pointer;">Buy it now</button>
+
+            <!-- Stock bar -->
+            <div style="margin-bottom: 0.8rem;">
+                <p style="font-size: 0.7rem; color: #d32f2f; margin-bottom: 0.2rem; display: flex; align-items: center; gap: 0.3rem;">⚡ Hurry, only 9 items left in stock!</p>
+                <div style="width: 100%; height: 3px; background: #ffebee; border-radius: 2px;">
+                    <div style="width: 20%; height: 100%; background: #d32f2f; border-radius: 2px;"></div>
+                </div>
+            </div>
+
+            <!-- Features -->
+            <div style="background: var(--color-gray-100); padding: 0.8rem; border-radius: 10px;">
+                <div style="display: flex; gap: 0.6rem; align-items: flex-start; margin-bottom: 0.4rem;">
+                    <span style="color: #2e7d32; font-size: 0.75rem;">✔</span>
+                    <div>
+                        <p style="font-weight: 600; font-size: 0.75rem;">Pickup available at Store</p>
+                        <p style="font-size: 0.65rem; color: var(--color-text-muted);">Ready in 24 hours</p>
+                    </div>
+                </div>
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.4rem; font-size: 0.65rem; color: var(--color-text-muted); border-top: 1px solid #ddd; padding-top: 0.4rem;">
+                    <div>🛡 2-Year Warranty</div>
+                    <div>📦 Fast delivery</div>
+                    <div>🔄 30 days return</div>
+                    <div>❓ Ask question</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 9: Find your perfect activewear -->
+    <section class="section-padding container text-center">
+        <h2 style="font-size: 3rem; margin-bottom: 1rem;">Find your perfect<br>activewear</h2>
+        <p style="color: var(--color-text-muted); margin-bottom: 2rem;">Not sure which product suits your needs best? Compare our<br>top collections</p>
+        <a href="#" class="btn-pill btn-dark" style="margin-bottom: 4rem;">Learn more ➔</a>
+
+        <div style="display: flex; gap: 2rem; text-align: left;">
+            <!-- Column 1 -->
+            <div style="flex: 1; background: var(--color-gray-100); padding: 2rem; border-radius: 20px;">
+                <div style="height: 300px; background: #eee; border-radius: 10px; overflow: hidden; margin-bottom: 1.5rem;">
+                    <img src="assets/hero.png" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+                <h3 style="font-size: 1.1rem; font-weight: 500;">SculptFit sports top</h3>
+                <p style="font-weight: 600; margin-bottom: 1.5rem;">$180.00</p>
+                
+                <div style="border-top: 1px solid #ddd; padding: 1rem 0;">
+                    <p style="font-size: 0.8rem; font-weight: 600; margin-bottom: 0.5rem;">Color</p>
+                    <div style="display: flex; gap: 0.5rem;">
+                        <span style="width: 15px; height: 15px; border-radius: 50%; background: #000;"></span>
+                        <span style="width: 15px; height: 15px; border-radius: 50%; background: #fff; border: 1px solid #ccc;"></span>
+                    </div>
+                </div>
+                
+                <div style="border-top: 1px solid #ddd; padding: 1rem 0;">
+                    <p style="font-size: 0.8rem; font-weight: 600; margin-bottom: 0.5rem;">Size</p>
+                    <div style="display: flex; gap: 0.2rem; font-size: 0.7rem; color: var(--color-text-muted);">
+                        <span style="background: white; padding: 0.2rem 0.4rem; border-radius: 3px;">XS</span>
+                        <span style="background: white; padding: 0.2rem 0.4rem; border-radius: 3px;">S</span>
+                        <span style="background: white; padding: 0.2rem 0.4rem; border-radius: 3px;">M</span>
+                        <span style="background: white; padding: 0.2rem 0.4rem; border-radius: 3px;">L</span>
+                        <span style="background: white; padding: 0.2rem 0.4rem; border-radius: 3px;">XL</span>
+                    </div>
+                </div>
+
+                <div style="border-top: 1px solid #ddd; padding: 1rem 0;">
+                    <p style="font-size: 0.8rem; font-weight: 600; margin-bottom: 0.5rem;">Material</p>
+                    <p style="font-size: 0.8rem; color: var(--color-text-muted);">💧 Sweat-wicking</p>
+                </div>
+                
+                <div style="border-top: 1px solid #ddd; padding: 1rem 0;">
+                    <p style="font-size: 0.8rem; font-weight: 600; margin-bottom: 0.5rem;">Stretch Flexibility</p>
+                    <p style="font-size: 0.8rem; color: var(--color-text-muted);">✔ Relaxed fit</p>
+                </div>
+            </div>
+
+            <!-- Column 2 -->
+            <div style="flex: 1; background: var(--color-gray-100); padding: 2rem; border-radius: 20px;">
+                <div style="height: 300px; background: #eee; border-radius: 10px; overflow: hidden; margin-bottom: 1.5rem;">
+                    <img src="assets/hero.png" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+                <h3 style="font-size: 1.1rem; font-weight: 500;">Flow motion tank</h3>
+                <p style="font-weight: 600; margin-bottom: 1.5rem;">$120.00</p>
+                
+                <div style="border-top: 1px solid #ddd; padding: 1rem 0;">
+                    <p style="font-size: 0.8rem; font-weight: 600; margin-bottom: 0.5rem;">Color</p>
+                    <div style="display: flex; gap: 0.5rem;">
+                        <span style="width: 15px; height: 15px; border-radius: 50%; background: #e67e22;"></span>
+                        <span style="width: 15px; height: 15px; border-radius: 50%; background: #2c3e50;"></span>
+                    </div>
+                </div>
+                
+                <div style="border-top: 1px solid #ddd; padding: 1rem 0;">
+                    <p style="font-size: 0.8rem; font-weight: 600; margin-bottom: 0.5rem;">Size</p>
+                    <div style="display: flex; gap: 0.2rem; font-size: 0.7rem; color: var(--color-text-muted);">
+                        <span style="background: white; padding: 0.2rem 0.4rem; border-radius: 3px;">XS</span>
+                        <span style="background: white; padding: 0.2rem 0.4rem; border-radius: 3px;">S</span>
+                        <span style="background: white; padding: 0.2rem 0.4rem; border-radius: 3px;">M</span>
+                        <span style="background: white; padding: 0.2rem 0.4rem; border-radius: 3px;">L</span>
+                        <span style="background: white; padding: 0.2rem 0.4rem; border-radius: 3px;">XL</span>
+                    </div>
+                </div>
+
+                <div style="border-top: 1px solid #ddd; padding: 1rem 0;">
+                    <p style="font-size: 0.8rem; font-weight: 600; margin-bottom: 0.5rem;">Material</p>
+                    <p style="font-size: 0.8rem; color: var(--color-text-muted);">🌿 Natural fibers</p>
+                </div>
+                
+                <div style="border-top: 1px solid #ddd; padding: 1rem 0;">
+                    <p style="font-size: 0.8rem; font-weight: 600; margin-bottom: 0.5rem;">Stretch Flexibility</p>
+                    <p style="font-size: 0.8rem; color: var(--color-text-muted);">✔ High-compression stretch</p>
+                </div>
+            </div>
+
+            <!-- Column 3 -->
+            <div style="flex: 1; background: var(--color-gray-100); padding: 2rem; border-radius: 20px;">
+                <div style="height: 300px; background: #eee; border-radius: 10px; overflow: hidden; margin-bottom: 1.5rem;">
+                    <img src="assets/hero.png" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+                <h3 style="font-size: 1.1rem; font-weight: 500;">Energy flow long tank</h3>
+                <p style="font-weight: 600; margin-bottom: 1.5rem;">$150.00</p>
+                
+                <div style="border-top: 1px solid #ddd; padding: 1rem 0;">
+                    <p style="font-size: 0.8rem; font-weight: 600; margin-bottom: 0.5rem;">Color</p>
+                    <div style="display: flex; gap: 0.5rem;">
+                        <span style="width: 15px; height: 15px; border-radius: 50%; background: #27ae60;"></span>
+                        <span style="width: 15px; height: 15px; border-radius: 50%; background: #000;"></span>
+                        <span style="width: 15px; height: 15px; border-radius: 50%; background: #2980b9;"></span>
+                    </div>
+                </div>
+                
+                <div style="border-top: 1px solid #ddd; padding: 1rem 0;">
+                    <p style="font-size: 0.8rem; font-weight: 600; margin-bottom: 0.5rem;">Size</p>
+                    <div style="display: flex; gap: 0.2rem; font-size: 0.7rem; color: var(--color-text-muted);">
+                        <span style="background: white; padding: 0.2rem 0.4rem; border-radius: 3px;">S</span>
+                        <span style="background: white; padding: 0.2rem 0.4rem; border-radius: 3px;">M</span>
+                        <span style="background: white; padding: 0.2rem 0.4rem; border-radius: 3px;">L</span>
+                        <span style="background: white; padding: 0.2rem 0.4rem; border-radius: 3px;">XL</span>
+                    </div>
+                </div>
+
+                <div style="border-top: 1px solid #ddd; padding: 1rem 0;">
+                    <p style="font-size: 0.8rem; font-weight: 600; margin-bottom: 0.5rem;">Material</p>
+                    <p style="font-size: 0.8rem; color: var(--color-text-muted);">☁ Ultra-soft cotton blend</p>
+                </div>
+                
+                <div style="border-top: 1px solid #ddd; padding: 1rem 0;">
+                    <p style="font-size: 0.8rem; font-weight: 600; margin-bottom: 0.5rem;">Stretch Flexibility</p>
+                    <p style="font-size: 0.8rem; color: var(--color-text-muted);">✔ High-compression stretch</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 10: Squat Hotspot Image -->
+    <section class="section-padding container">
+        <div style="height: 80vh; border-radius: 40px; overflow: hidden; position: relative;">
+            <img src="assets/hero.png" style="width: 100%; height: 100%; object-fit: cover; filter: brightness(0.6);">
+            <div class="hotspot" style="top: 30%; left: 30%; border-color: var(--color-primary);"><div style="width: 10px; height: 10px; background: var(--color-primary); border-radius: 50%; position: absolute; top: 4px; left: 4px;"></div></div>
+            <div class="hotspot" style="top: 70%; left: 40%; border-color: var(--color-primary);"><div style="width: 10px; height: 10px; background: var(--color-primary); border-radius: 50%; position: absolute; top: 4px; left: 4px;"></div></div>
+            <div class="hotspot" style="top: 50%; left: 70%; border-color: var(--color-primary);"><div style="width: 10px; height: 10px; background: var(--color-primary); border-radius: 50%; position: absolute; top: 4px; left: 4px;"></div></div>
+        </div>
+    </section>
+
+    <!-- SECTION 10.5: Push Limits Banner -->
+    <section class="section-padding container">
+        <div style="height: 400px; border-radius: 40px; overflow: hidden; position: relative; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; color: white;">
+            <img src="assets/banner.png" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 0; filter: brightness(0.7);">
+            <div style="position: relative; z-index: 1;">
+                <h2 style="font-size: 4rem; text-transform: none; margin-bottom: 1rem;">Push limits.<br>Break boundaries.</h2>
+                <p style="margin-bottom: 2rem; font-size: 1.1rem;">Discover performance gear designed to move with you</p>
+                <a href="#" class="btn-pill btn-creative">Shop now ➔</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 11: Shop by Activity & Reviews -->
+    <section class="section-padding" style="background: #f7f7f7;">
+        <div class="container text-center" style="margin-bottom: 3rem;">
+            <h2 style="font-size: 3rem; text-transform: none;">Shop by activity</h2>
+        </div>
+        <div class="activity-card-container">
+            <!-- Run -->
+            <div class="activity-card-v2" style="background: #2D2D2D;">
+                <div class="activity-card-v2-content" style="color: white;">
+                    <h3>Run</h3>
+                    <p>Sit comfortably, feel at home!</p>
+                    <a href="#" class="btn-pill btn-creative" style="padding: 0.4rem 1rem; font-size: 0.7rem; background: white; color: black; border-radius: 20px;">Shop now ➔</a>
+                </div>
+                <img src="assets/activity-run.png" alt="Run">
+            </div>
+            <!-- Gym -->
+            <div class="activity-card-v2" style="background: #C4C4C4;">
+                <div class="activity-card-v2-content" style="color: black;">
+                    <h3>Gym</h3>
+                    <p>Sit comfortably, feel at home!</p>
+                    <a href="#" class="btn-pill btn-creative" style="padding: 0.4rem 1rem; font-size: 0.7rem; background: rgba(0,0,0,0.1); color: black; border-radius: 20px;">Shop now ➔</a>
+                </div>
+                <img src="assets/activity-gym.png" alt="Gym">
+            </div>
+            <!-- Pilates -->
+            <div class="activity-card-v2" style="background: white; border: 1px solid #eee;">
+                <div class="activity-card-v2-content" style="color: black;">
+                    <h3>Pilates</h3>
+                    <p>Sit comfortably, feel at home!</p>
+                    <a href="#" class="btn-pill btn-creative" style="padding: 0.4rem 1rem; font-size: 0.7rem; background: #2D2D2D; color: white; border-radius: 20px;">Shop now ➔</a>
+                </div>
+                <img src="assets/activity-pilates.png" alt="Pilates">
+            </div>
+            <!-- Swimwear -->
+            <div class="activity-card-v2" style="background: #B4B4B4;">
+                <div class="activity-card-v2-content" style="color: black;">
+                    <h3>Swimwear</h3>
+                    <p>Sit comfortably, feel at home!</p>
+                    <a href="#" class="btn-pill btn-creative" style="padding: 0.4rem 1rem; font-size: 0.7rem; background: rgba(0,0,0,0.1); color: black; border-radius: 20px;">Shop now ➔</a>
+                </div>
+                <img src="assets/activity-swim.png" alt="Swimwear">
+            </div>
+            <!-- Casual -->
+            <div class="activity-card-v2" style="background: #4A90E2;">
+                <div class="activity-card-v2-content" style="color: white;">
+                    <h3>Casual</h3>
+                    <p>Sit comfortably, feel at home!</p>
+                    <a href="#" class="btn-pill btn-creative" style="padding: 0.4rem 1rem; font-size: 0.7rem; background: white; color: black; border-radius: 20px;">Shop now ➔</a>
+                </div>
+                <img src="assets/activity-casual.png" alt="Casual">
+            </div>
+        </div>
+    </section>
+
+    <!-- Loved by our community -->
+    <section class="section-padding container">
+        <div class="text-center" style="margin-bottom: 4rem;">
+            <h2 style="font-size: 3.5rem; text-transform: none;">Loved by our community</h2>
+            <p style="color: var(--color-text-muted);">See what our customers are saying about our products</p>
+        </div>
+        <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem;">
+            <div style="background: var(--color-gray-100); padding: 2rem; border-radius: 20px; border: 1px solid var(--color-gray-200);">
+                <div style="color: #FFB800; margin-bottom: 1rem;">★★★★★</div>
+                <h4 style="margin-bottom: 1rem;">Super Comfortable!</h4>
+                <p style="font-size: 0.85rem; color: var(--color-text-muted); margin-bottom: 1.5rem;">Wearing this set feels just like being at home - super comfy! No matter how much I move around, it never feels tight.</p>
+                <div style="display: flex; gap: 0.5rem; font-size: 0.8rem; font-weight: 600;"><span>✓ Anna</span></div>
+                <div style="margin-top: 1.5rem; border-top: 1px solid #ddd; padding-top: 1rem;">
+                    <p style="font-size: 0.75rem; opacity: 0.7;">Breezeflow midi jumpsuit dress</p>
+                    <p style="font-weight: 700;">$120.00</p>
+                    <a href="#" class="btn-pill btn-creative" style="font-size: 0.7rem; text-decoration: underline;">Quick view</a>
+                </div>
+            </div>
+            <div style="background: var(--color-gray-100); padding: 2rem; border-radius: 20px; border: 1px solid var(--color-gray-200);">
+                <div style="color: #FFB800; margin-bottom: 1rem;">★★★★★</div>
+                <h4 style="margin-bottom: 1rem;">Cute & Practical</h4>
+                <p style="font-size: 0.85rem; color: var(--color-text-muted); margin-bottom: 1.5rem;">The fabric is super soft and absorbs sweat quickly, so I still feel fresh after workouts. My friends even said the outfit looks cute on me.</p>
+                <div style="display: flex; gap: 0.5rem; font-size: 0.8rem; font-weight: 600;"><span>✓ May</span></div>
+                <div style="margin-top: 1.5rem; border-top: 1px solid #ddd; padding-top: 1rem;">
+                    <p style="font-size: 0.75rem; opacity: 0.7;">Coral sports bra</p>
+                    <p style="font-weight: 700;">$180.00</p>
+                    <a href="#" class="btn-pill btn-creative" style="font-size: 0.7rem; text-decoration: underline;">Quick view</a>
+                </div>
+            </div>
+            <div style="background: var(--color-gray-100); padding: 2rem; border-radius: 20px; border: 1px solid var(--color-gray-200);">
+                <div style="color: #FFB800; margin-bottom: 1rem;">★★★★★</div>
+                <h4 style="margin-bottom: 1rem;">Sporty & Stylish</h4>
+                <p style="font-size: 0.85rem; color: var(--color-text-muted); margin-bottom: 1.5rem;">I wear this set to class then head straight to the gym, no outfit change. Comfy for workouts yet stylish enough for hanging out.</p>
+                <div style="display: flex; gap: 0.5rem; font-size: 0.8rem; font-weight: 600;"><span>✓ Nicole</span></div>
+                <div style="margin-top: 1.5rem; border-top: 1px solid #ddd; padding-top: 1rem;">
+                    <p style="font-size: 0.75rem; opacity: 0.7;">Breeze active tank</p>
+                    <p style="font-weight: 700;">$150.00</p>
+                    <a href="#" class="btn-pill btn-creative" style="font-size: 0.7rem; text-decoration: underline;">Quick view</a>
+                </div>
+            </div>
+            <div style="background: var(--color-gray-100); padding: 2rem; border-radius: 20px; border: 1px solid var(--color-gray-200);">
+                <div style="color: #FFB800; margin-bottom: 1rem;">★★★★★</div>
+                <h4 style="margin-bottom: 1rem;">Breathable & Confident</h4>
+                <p style="font-size: 0.85rem; color: var(--color-text-muted); margin-bottom: 1.5rem;">Even after heavy cardio, the outfit stays breathable. Squats or planks? No worries about losing shape - still confident.</p>
+                <div style="display: flex; gap: 0.5rem; font-size: 0.8rem; font-weight: 600;"><span>✓ Tramy</span></div>
+                <div style="margin-top: 1.5rem; border-top: 1px solid #ddd; padding-top: 1rem;">
+                    <p style="font-size: 0.75rem; opacity: 0.7;">Enduro mesh top</p>
+                    <p style="font-weight: 700;">$180.00</p>
+                    <a href="#" class="btn-pill btn-creative" style="font-size: 0.7rem; text-decoration: underline;">Quick view</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Latest stories -->
+    <section class="section-padding container">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2rem;">
+            <h2 style="font-size: 3rem;">Latest stories</h2>
+            <a href="#" class="btn-pill btn-creative" style="background: var(--color-gray-100); border: 1px solid #ddd;">See all articles ➔</a>
+        </div>
+    </section>
+
+    <!-- SECTION 12: Zoom Image Animation -->
+    <section id="zoom-scroll-container" style="height: 100vh; position: relative; overflow: hidden; background: #fffaf5; display: flex; align-items: center; justify-content: center;">
+        
+        <!-- Background Marquee Texts -->
+        <div style="position: absolute; width: 200%; top: 50%; transform: translateY(-50%); display: flex; flex-direction: column; gap: 1rem; opacity: 0.3; z-index: 0; font-size: 4rem; font-weight: 600;">
+            <div style="white-space: nowrap;">Confidence 〰️ Always ⚡ Flexibility 〰️ Confidence 〰️ Always ⚡ Flexibility</div>
+            <div style="white-space: nowrap; transform: translateX(-10%);">Always ⚡ Flexibility 〰️ Confidence 〰️ Always ⚡ Flexibility 〰️ Confidence</div>
+        </div>
+
+        <!-- Center Zoom Image -->
+        <div id="zoom-center-image" style="width: 0px; height: 0px; border-radius: 40px; overflow: hidden; position: relative; z-index: 1; opacity: 0;">
+            <img src="assets/zoom-image.png" style="width: 100%; height: 100%; object-fit: cover;">
+            
+            <div id="zoom-text-overlay" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center; color: white; opacity: 0; width: 80%;">
+                <h2 style="font-size: 5rem; line-height: 1.1; margin-bottom: 1rem;">Born to move,<br>designed to inspire</h2>
+                <p style="margin-bottom: 2rem; font-size: 1.2rem;">Our mission is to empower you with high-performance activewear that blends style, comfort, and innovation</p>
+                <a href="#" class="btn-pill btn-creative">Shop now ➔</a>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- SECTION 13: Instagram Feed & Must-haves -->
+    <section class="section-padding container">
+        <div class="text-center" style="margin-bottom: 3rem;">
+            <p style="color: var(--color-text-muted); font-size: 0.9rem;">Discover premium audio from our Instagram and shop now.</p>
+        </div>
+        <div style="display: grid; grid-template-columns: repeat(5, 1fr); gap: 1rem; margin-bottom: 5rem;">
+            <div style="height: 400px; border-radius: 20px; overflow: hidden; position: relative;">
+                <img src="assets/activity-run.png" style="width: 100%; height: 100%; object-fit: cover;">
+                <div style="position: absolute; bottom: 1rem; left: 1rem; display: flex; gap: 0.5rem;">
+                    <span style="width: 30px; height: 30px; background: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.7rem;">🛍️</span>
+                </div>
+            </div>
+            <div style="height: 400px; border-radius: 20px; overflow: hidden; position: relative;">
+                <img src="assets/activity-gym.png" style="width: 100%; height: 100%; object-fit: cover;">
+                <div style="position: absolute; bottom: 1rem; left: 1rem; display: flex; gap: 0.5rem;">
+                    <span style="width: 30px; height: 30px; background: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.7rem;">🛍️</span>
+                </div>
+            </div>
+            <div style="height: 400px; border-radius: 20px; overflow: hidden; position: relative;">
+                <img src="assets/activity-pilates.png" style="width: 100%; height: 100%; object-fit: cover;">
+                <div style="position: absolute; bottom: 1rem; left: 1rem; display: flex; gap: 0.5rem;">
+                    <span style="width: 30px; height: 30px; background: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.7rem;">🛍️</span>
+                </div>
+            </div>
+            <div style="height: 400px; border-radius: 20px; overflow: hidden; position: relative;">
+                <img src="assets/activity-swim.png" style="width: 100%; height: 100%; object-fit: cover;">
+                <div style="position: absolute; bottom: 1rem; left: 1rem; display: flex; gap: 0.5rem;">
+                    <span style="width: 30px; height: 30px; background: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.7rem;">🛍️</span>
+                </div>
+            </div>
+            <div style="height: 400px; border-radius: 20px; overflow: hidden; position: relative;">
+                <img src="assets/activity-casual.png" style="width: 100%; height: 100%; object-fit: cover;">
+                <div style="position: absolute; bottom: 1rem; left: 1rem; display: flex; gap: 0.5rem;">
+                    <span style="width: 30px; height: 30px; background: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.7rem;">🛍️</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center">
+            <h2 style="font-size: 3.5rem; margin-bottom: 1rem;">Our newest must – haves</h2>
+            <p style="color: var(--color-text-muted); font-size: 1rem;">Attack your next workout wearing black and red the power</p>
+        </div>
+    </section>
+
+    <!-- FOOTER FEATURES BAR -->
+    <section class="footer-features">
+        <div class="container features-grid">
+            <div class="feature-item">
+                <div class="feature-icon">📦</div>
+                <h4>Fast free shipping</h4>
+                <p>Get free shipping on orders of $100 or more</p>
+            </div>
+            <div class="feature-item">
+                <div class="feature-icon">🔄</div>
+                <h4>Hassle-free returns</h4>
+                <p>Easy returns within 14 days of delivery.</p>
+            </div>
+            <div class="feature-item">
+                <div class="feature-icon">🔒</div>
+                <h4>100% secure checkout</h4>
+                <p>All payments are processed securely</p>
+            </div>
+            <div class="feature-item">
+                <div class="feature-icon">🎧</div>
+                <h4>Customer Service</h4>
+                <p>Our support team is available 24/7</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- MAIN FOOTER -->
+    <footer class="main-footer">
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <h2 class="footer-logo">A</h2>
+                <h3 class="signup-title">Sign up now</h3>
+                <p class="signup-text">Stay in the loop, with exclusive offers and product previews.</p>
+                <div class="email-signup">
+                    <input type="email" placeholder="Enter your email">
+                    <button class="subscribe-btn">Subscribe ↗</button>
+                </div>
+                <div class="social-links">
+                    <a href="#">f</a>
+                    <a href="#">i</a>
+                    <a href="#">y</a>
+                    <a href="#">t</a>
+                    <a href="#">x</a>
+                </div>
+                <div class="footer-bottom-selectors">
+                    <div class="selector">🇺🇸 United States (USD $) ⌄</div>
+                    <div class="selector">English ⌄</div>
+                </div>
+            </div>
+            
+            <div class="footer-links-column">
+                <h4>Help</h4>
+                <ul>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Refund Policy</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Shipping Policy</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-links-column">
+                <h4>About us</h4>
+                <ul>
+                    <li><a href="#">FAQ's</a></li>
+                    <li><a href="#">Our story</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Contact with map</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="container footer-copyright">
+            <p>© 2026, Athora Store Powered by Shopify</p>
+            <div class="payment-icons">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Mastercard-logo.svg/1280px-Mastercard-logo.svg.png" alt="Mastercard">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Visa_Inc._logo.svg/2560px-Visa_Inc._logo.svg.png" alt="Visa">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/PayPal.svg/1200px-PayPal.svg.png" alt="Paypal">
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

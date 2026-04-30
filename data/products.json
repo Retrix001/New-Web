@@ -1,0 +1,364 @@
+[
+  {
+    "id": "p1",
+    "name": "Coral sports bra",
+    "brand": "Flexora",
+    "price": 180,
+    "salePrice": null,
+    "sku": "ATH-CORAL-01",
+    "stock": 24,
+    "category": "best",
+    "collections": [
+      "best",
+      "running"
+    ],
+    "tags": [
+      "new",
+      "support"
+    ],
+    "show": true,
+    "featured": true,
+    "isNew": true,
+    "bestseller": true,
+    "sale": false,
+    "summary": "High-support sports bra with sweat-wicking fabric and contoured straps.",
+    "description": "The Coral sports bra blends ultra-soft compression fabric with a contoured silhouette for high-impact training. Strap-back design and bonded seams keep you locked in without distraction.",
+    "images": [
+      "assets/activity-run.png",
+      "assets/ruby-bra.png",
+      "assets/zoom-image.png"
+    ],
+    "colors": [
+      {
+        "name": "Coral",
+        "hex": "#E5C7C3"
+      },
+      {
+        "name": "Black",
+        "hex": "#000000"
+      }
+    ],
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ]
+  },
+  {
+    "id": "p2",
+    "name": "Ruby sports bra",
+    "brand": "Modemosaic",
+    "price": 150,
+    "salePrice": 120,
+    "sku": "ATH-RUBY-02",
+    "stock": 14,
+    "category": "best",
+    "collections": [
+      "best",
+      "yoga"
+    ],
+    "tags": [
+      "sale",
+      "studio"
+    ],
+    "show": true,
+    "featured": true,
+    "isNew": false,
+    "bestseller": true,
+    "sale": true,
+    "summary": "Medium-support bra with bold contrast detailing.",
+    "description": "Designed for studio sessions and lighter cardio, the Ruby bra is built around a soft cup with bold strap detail and breathable mesh panels.",
+    "images": [
+      "assets/activity-gym.png",
+      "assets/jumpsuit.png",
+      "assets/ruby-bra.png"
+    ],
+    "colors": [
+      {
+        "name": "Orange",
+        "hex": "#FF7B00"
+      },
+      {
+        "name": "Plum",
+        "hex": "#332124"
+      },
+      {
+        "name": "Black",
+        "hex": "#000000"
+      }
+    ],
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L"
+    ]
+  },
+  {
+    "id": "p3",
+    "name": "Emerald sports bra",
+    "brand": "Flexora",
+    "price": 150,
+    "salePrice": null,
+    "sku": "ATH-EMR-03",
+    "stock": 18,
+    "category": "yoga",
+    "collections": [
+      "yoga"
+    ],
+    "tags": [
+      "seamless"
+    ],
+    "show": true,
+    "featured": true,
+    "isNew": false,
+    "bestseller": false,
+    "sale": false,
+    "summary": "Lightweight yoga bra with seamless construction.",
+    "description": "Seamless knit construction and soft hand-feel make the Emerald a daily essential for yoga and pilates.",
+    "images": [
+      "assets/ruby-bra.png",
+      "assets/activity-pilates.png"
+    ],
+    "colors": [
+      {
+        "name": "Mocha",
+        "hex": "#4B3B42"
+      },
+      {
+        "name": "Indigo",
+        "hex": "#1B263B"
+      }
+    ],
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ]
+  },
+  {
+    "id": "p4",
+    "name": "Jade impact bra",
+    "brand": "Flexora",
+    "price": 250,
+    "salePrice": null,
+    "sku": "ATH-JADE-04",
+    "stock": 9,
+    "category": "running",
+    "collections": [
+      "running",
+      "best"
+    ],
+    "tags": [
+      "new",
+      "impact"
+    ],
+    "show": true,
+    "featured": true,
+    "isNew": true,
+    "bestseller": false,
+    "sale": false,
+    "summary": "Premium high-impact bra with ribbed performance fabric.",
+    "description": "Engineered for high-impact running with double-bonded support, ribbed fabric and a back-zip closure.",
+    "images": [
+      "assets/activity-pilates.png",
+      "assets/activity-swim.png"
+    ],
+    "colors": [
+      {
+        "name": "Jade",
+        "hex": "#8E9B97"
+      }
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ]
+  },
+  {
+    "id": "p5",
+    "name": "Breeze active tank",
+    "brand": "Modemosaic",
+    "price": 120,
+    "salePrice": null,
+    "sku": "ATH-BRZ-05",
+    "stock": 33,
+    "category": "running",
+    "collections": [
+      "running",
+      "outerwear"
+    ],
+    "tags": [
+      "lightweight"
+    ],
+    "show": true,
+    "featured": false,
+    "isNew": false,
+    "bestseller": true,
+    "sale": false,
+    "summary": "Featherlight tank for runs and studio days.",
+    "description": "Drop-armhole tank in airy mesh. Sweat-wicking, fast-drying and perfect over a bra or alone.",
+    "images": [
+      "assets/activity-swim.png",
+      "assets/zoom-image.png"
+    ],
+    "colors": [
+      {
+        "name": "Sky",
+        "hex": "#A8D5E2"
+      },
+      {
+        "name": "Black",
+        "hex": "#000000"
+      }
+    ],
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L"
+    ]
+  },
+  {
+    "id": "p6",
+    "name": "Enduro mesh top",
+    "brand": "Flexora",
+    "price": 110,
+    "salePrice": 90,
+    "sku": "ATH-END-06",
+    "stock": 12,
+    "category": "running",
+    "collections": [
+      "running",
+      "outerwear"
+    ],
+    "tags": [
+      "sale",
+      "mesh"
+    ],
+    "show": true,
+    "featured": false,
+    "isNew": false,
+    "bestseller": false,
+    "sale": true,
+    "summary": "Breathable mesh top for high-intensity sessions.",
+    "description": "Targeted mesh panels at the back and sides keep you cool during the hardest intervals.",
+    "images": [
+      "assets/activity-casual.png",
+      "assets/banner.png"
+    ],
+    "colors": [
+      {
+        "name": "Stone",
+        "hex": "#D3D3D3"
+      },
+      {
+        "name": "Black",
+        "hex": "#000000"
+      }
+    ],
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ]
+  },
+  {
+    "id": "p7",
+    "name": "Breezeflow midi jumpsuit",
+    "brand": "Modemosaic",
+    "price": 120,
+    "salePrice": null,
+    "sku": "ATH-JUMP-07",
+    "stock": 9,
+    "category": "yoga",
+    "collections": [
+      "yoga",
+      "leggings"
+    ],
+    "tags": [
+      "featured",
+      "new"
+    ],
+    "show": true,
+    "featured": true,
+    "isNew": true,
+    "bestseller": false,
+    "sale": false,
+    "summary": "Versatile jumpsuit for yoga, travel and brunch.",
+    "description": "The Breezeflow combines the fluidity of a dress with the ease of a jumpsuit. Ultra-soft, sweat-wicking fabric keeps you comfortable from yoga flow to evening plans.",
+    "images": [
+      "assets/jumpsuit.png",
+      "assets/hero.png",
+      "assets/activity-casual.png"
+    ],
+    "colors": [
+      {
+        "name": "Black",
+        "hex": "#000000"
+      },
+      {
+        "name": "Cream",
+        "hex": "#ECF0F1"
+      }
+    ],
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ]
+  },
+  {
+    "id": "p8",
+    "name": "Cloud-feel joggers",
+    "brand": "Flexora",
+    "price": 95,
+    "salePrice": null,
+    "sku": "ATH-CLD-08",
+    "stock": 27,
+    "category": "joggers",
+    "collections": [
+      "joggers",
+      "best"
+    ],
+    "tags": [
+      "recovery"
+    ],
+    "show": true,
+    "featured": false,
+    "isNew": false,
+    "bestseller": true,
+    "sale": false,
+    "summary": "Soft fleece joggers for rest days and recovery.",
+    "description": "Brushed-back fleece, a relaxed fit and zip pockets make this pair easy for recovery days and daily wear.",
+    "images": [
+      "assets/activity-casual.png",
+      "assets/banner.png"
+    ],
+    "colors": [
+      {
+        "name": "Cocoa",
+        "hex": "#795548"
+      },
+      {
+        "name": "Black",
+        "hex": "#000000"
+      }
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ]
+  }
+]

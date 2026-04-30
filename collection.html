@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Products | ATHORA</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .sub-collection-slider {
+            display: flex;
+            gap: 2rem;
+            overflow-x: auto;
+            scrollbar-width: none;
+            padding: var(--spacing-md) 0;
+            margin-bottom: var(--spacing-lg);
+            border-bottom: 1px solid var(--color-gray-200);
+        }
+        .sub-collection-item {
+            flex: 0 0 auto;
+            text-align: center;
+            cursor: pointer;
+        }
+        .sub-collection-item img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 0.5rem;
+            border: 1px solid var(--color-gray-200);
+            transition: var(--transition-cinematic);
+        }
+        .sub-collection-item:hover img {
+            border-color: var(--color-primary);
+            transform: scale(1.1);
+        }
+        .product-grid {
+            grid-template-columns: repeat(4, 1fr);
+            gap: 2px;
+            background: var(--color-gray-200);
+        }
+        .product-card {
+            background: var(--color-white);
+            padding: var(--spacing-sm);
+            transition: var(--transition-cinematic);
+        }
+        @media (max-width: 1024px) { .product-grid { grid-template-columns: repeat(2, 1fr); } }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <div class="header-container" style="position: relative; top: 0; padding: 2rem; background: var(--color-white);">
+        <header class="header-pill" id="header" style="position: relative; box-shadow: none; border-bottom: 1px solid var(--color-gray-200);">
+            <div class="header-left">
+                <a href="index.html" class="nav-logo-pill">A</a>
+                <nav class="nav-menu">
+                    <div class="nav-item">Shop <span class="chevron">⌄</span></div>
+                    <div class="nav-item">Collections <span class="chevron">⌄</span></div>
+                    <div class="nav-item">Page <span class="chevron">⌄</span></div>
+                    <a href="#" class="nav-item">Blog</a>
+                    <div class="nav-item">Theme <span class="chevron">⌄</span></div>
+                </nav>
+            </div>
+            
+            <div class="header-right">
+                <div class="lang-selector">
+                    <img src="https://flagcdn.com/w20/us.png" alt="US">
+                    USD $ / EN <span class="chevron">⌄</span>
+                </div>
+                <div class="header-icons">
+                    <a href="#" class="header-icon">🔍</a>
+                    <a href="#" class="header-icon">👤</a>
+                    <a href="#" class="header-icon">🛍️</a>
+                </div>
+            </div>
+        </header>
+    </div>
+
+    <main class="container" style="margin-top: 120px;">
+        <h1 style="font-size: 3rem; margin-bottom: var(--spacing-md);">All Products</h1>
+
+        <!-- Sub-collection Slider -->
+        <div class="sub-collection-slider">
+            <div class="sub-collection-item">
+                <img src="assets/category-1.png" alt="Leggings">
+                <span style="font-size: 0.75rem; font-weight: 600;">LEGGINGS</span>
+            </div>
+            <div class="sub-collection-item">
+                <img src="assets/product-1.png" alt="Sports Bras">
+                <span style="font-size: 0.75rem; font-weight: 600;">SPORTS BRAS</span>
+            </div>
+            <div class="sub-collection-item">
+                <img src="assets/category-1.png" alt="Tops">
+                <span style="font-size: 0.75rem; font-weight: 600;">TOPS</span>
+            </div>
+            <div class="sub-collection-item">
+                <img src="assets/product-1.png" alt="Jackets">
+                <span style="font-size: 0.75rem; font-weight: 600;">JACKETS</span>
+            </div>
+            <div class="sub-collection-item">
+                <img src="assets/category-1.png" alt="Shorts">
+                <span style="font-size: 0.75rem; font-weight: 600;">SHORTS</span>
+            </div>
+            <div class="sub-collection-item">
+                <img src="assets/product-1.png" alt="Accessories">
+                <span style="font-size: 0.75rem; font-weight: 600;">ACCESSORIES</span>
+            </div>
+        </div>
+
+        <!-- Filter Bar -->
+        <div class="flex justify-between align-center" style="margin-bottom: var(--spacing-md); font-size: 0.8rem; font-weight: 600;">
+            <div class="flex" style="gap: 2rem;">
+                <span>FILTER</span>
+                <span style="color: var(--color-text-body);">24 PRODUCTS</span>
+            </div>
+            <div>
+                <span>SORT BY: FEATURED</span>
+            </div>
+        </div>
+
+        <!-- Product Grid -->
+        <div class="grid" style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem; margin-bottom: 4rem;">
+            <!-- Product 1 -->
+            <div class="product-card">
+                <div class="product-image-container">
+                    <img src="assets/activity-run.png" class="main-img" alt="Coral sports bra">
+                    <img src="assets/ruby-bra.png" class="hover-img" alt="Coral sports bra hover">
+                    <div class="quick-view-btn">Quick view</div>
+                    <span class="badge" style="position: absolute; top: 1rem; right: 1rem; background: #96B786; color: white; padding: 0.2rem 0.8rem; border-radius: 5px; font-size: 0.7rem; font-weight: 700;">NEW</span>
+                </div>
+                <div class="product-info" style="text-align: left; padding: 1.5rem 0;">
+                    <p class="brand-tag">Flexora</p>
+                    <h3 class="product-title">Coral sports bra</h3>
+                    <p class="product-price">$180.00</p>
+                    <div class="color-swatches">
+                        <span class="swatch" style="background: #E5C7C3;"></span>
+                        <span class="swatch" style="background: #000;"></span>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 2 -->
+            <div class="product-card">
+                <div class="product-image-container">
+                    <img src="assets/activity-gym.png" class="main-img" alt="Ruby sports bra">
+                    <img src="assets/jumpsuit.png" class="hover-img" alt="Ruby sports bra hover">
+                    <div class="quick-view-btn">Quick view</div>
+                </div>
+                <div class="product-info" style="text-align: left; padding: 1.5rem 0;">
+                    <p class="brand-tag">Modemosaic</p>
+                    <h3 class="product-title">Ruby sports bra</h3>
+                    <p class="product-price">$150.00</p>
+                    <div class="color-swatches">
+                        <span class="swatch" style="background: #FF7B00;"></span>
+                        <span class="swatch" style="background: #332124;"></span>
+                        <span class="swatch" style="background: #000;"></span>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 3 -->
+            <div class="product-card">
+                <div class="product-image-container">
+                    <img src="assets/ruby-bra.png" class="main-img" alt="Emerald sports bra">
+                    <img src="assets/activity-pilates.png" class="hover-img" alt="Emerald sports bra hover">
+                    <div class="quick-view-btn">Quick view</div>
+                </div>
+                <div class="product-info" style="text-align: left; padding: 1.5rem 0;">
+                    <p class="brand-tag">Flexora</p>
+                    <h3 class="product-title">Emerald sports bra</h3>
+                    <p class="product-price">$150.00</p>
+                    <div class="color-swatches">
+                        <span class="swatch" style="background: #4B3B42;"></span>
+                        <span class="swatch" style="background: #1B263B;"></span>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 4 -->
+            <div class="product-card">
+                <div class="product-image-container">
+                    <img src="assets/activity-pilates.png" class="main-img" alt="Jade sports bra">
+                    <img src="assets/activity-swim.png" class="hover-img" alt="Jade sports bra hover">
+                    <div class="quick-view-btn">Quick view</div>
+                </div>
+                <div class="product-info" style="text-align: left; padding: 1.5rem 0;">
+                    <p class="brand-tag">Flexora</p>
+                    <h3 class="product-title">Jade sports bra</h3>
+                    <p class="product-price">$250.00</p>
+                    <div class="color-swatches">
+                        <span class="swatch" style="background: #8E9B97;"></span>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 5 -->
+            <div class="product-card">
+                <div class="product-image-container">
+                    <img src="assets/activity-swim.png" class="main-img" alt="Swim active">
+                    <img src="assets/zoom-image.png" class="hover-img" alt="Swim active hover">
+                    <div class="quick-view-btn">Quick view</div>
+                </div>
+                <div class="product-info" style="text-align: left; padding: 1.5rem 0;">
+                    <p class="brand-tag">Modemosaic</p>
+                    <h3 class="product-title">Breeze active tank</h3>
+                    <p class="product-price">$120.00</p>
+                    <div class="color-swatches">
+                        <span class="swatch" style="background: #a8d5e2;"></span>
+                        <span class="swatch" style="background: #000;"></span>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 6 -->
+            <div class="product-card">
+                <div class="product-image-container">
+                    <img src="assets/activity-casual.png" class="main-img" alt="Casual jacket">
+                    <img src="assets/banner.png" class="hover-img" alt="Casual jacket hover">
+                    <div class="quick-view-btn">Quick view</div>
+                </div>
+                <div class="product-info" style="text-align: left; padding: 1.5rem 0;">
+                    <p class="brand-tag">Flexora</p>
+                    <h3 class="product-title">Enduro mesh top</h3>
+                    <p class="product-price">$110.00</p>
+                    <div class="color-swatches">
+                        <span class="swatch" style="background: #d3d3d3;"></span>
+                        <span class="swatch" style="background: #000;"></span>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 7 -->
+            <div class="product-card">
+                <div class="product-image-container">
+                    <img src="assets/hero.png" class="main-img" alt="Hero suit">
+                    <img src="assets/jumpsuit-2.png" class="hover-img" alt="Hero suit hover">
+                    <div class="quick-view-btn">Quick view</div>
+                </div>
+                <div class="product-info" style="text-align: left; padding: 1.5rem 0;">
+                    <p class="brand-tag">Modemosaic</p>
+                    <h3 class="product-title">Velocity running top</h3>
+                    <p class="product-price">$65.00</p>
+                    <div class="color-swatches">
+                        <span class="swatch" style="background: #ff5722;"></span>
+                        <span class="swatch" style="background: #000;"></span>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 8 -->
+            <div class="product-card">
+                <div class="product-image-container">
+                    <img src="assets/jumpsuit-3.png" class="main-img" alt="Jumpsuit dark">
+                    <img src="assets/jumpsuit-4.png" class="hover-img" alt="Jumpsuit dark hover">
+                    <div class="quick-view-btn">Quick view</div>
+                </div>
+                <div class="product-info" style="text-align: left; padding: 1.5rem 0;">
+                    <p class="brand-tag">Flexora</p>
+                    <h3 class="product-title">Cloud-feel joggers</h3>
+                    <p class="product-price">$95.00</p>
+                    <div class="color-swatches">
+                        <span class="swatch" style="background: #795548;"></span>
+                        <span class="swatch" style="background: #000;"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- FOOTER FEATURES BAR -->
+    <section class="footer-features">
+        <div class="container features-grid">
+            <div class="feature-item">
+                <div class="feature-icon">📦</div>
+                <h4>Fast free shipping</h4>
+                <p>Get free shipping on orders of $100 or more</p>
+            </div>
+            <div class="feature-item">
+                <div class="feature-icon">🔄</div>
+                <h4>Hassle-free returns</h4>
+                <p>Easy returns within 14 days of delivery.</p>
+            </div>
+            <div class="feature-item">
+                <div class="feature-icon">🔒</div>
+                <h4>100% secure checkout</h4>
+                <p>All payments are processed securely</p>
+            </div>
+            <div class="feature-item">
+                <div class="feature-icon">🎧</div>
+                <h4>Customer Service</h4>
+                <p>Our support team is available 24/7</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- MAIN FOOTER -->
+    <footer class="main-footer">
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <h2 class="footer-logo">A</h2>
+                <h3 class="signup-title">Sign up now</h3>
+                <p class="signup-text">Stay in the loop, with exclusive offers and product previews.</p>
+                <div class="email-signup">
+                    <input type="email" placeholder="Enter your email">
+                    <button class="subscribe-btn">Subscribe ↗</button>
+                </div>
+                <div class="social-links">
+                    <a href="#">f</a>
+                    <a href="#">i</a>
+                    <a href="#">y</a>
+                    <a href="#">t</a>
+                    <a href="#">x</a>
+                </div>
+                <div class="footer-bottom-selectors">
+                    <div class="selector">🇺🇸 United States (USD $) ⌄</div>
+                    <div class="selector">English ⌄</div>
+                </div>
+            </div>
+            
+            <div class="footer-links-column">
+                <h4>Help</h4>
+                <ul>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Refund Policy</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Shipping Policy</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-links-column">
+                <h4>About us</h4>
+                <ul>
+                    <li><a href="#">FAQ's</a></li>
+                    <li><a href="#">Our story</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Contact with map</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="container footer-copyright">
+            <p>© 2026, Athora Store Powered by Shopify</p>
+            <div class="payment-icons">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Mastercard-logo.svg/1280px-Mastercard-logo.svg.png" alt="Mastercard">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Visa_Inc._logo.svg/2560px-Visa_Inc._logo.svg.png" alt="Visa">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/PayPal.svg/1200px-PayPal.svg.png" alt="Paypal">
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

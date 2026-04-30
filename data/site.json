@@ -1,0 +1,380 @@
+{
+  "admin": {
+    "username": "admin",
+    "password": "admin123"
+  },
+  "brand": {
+    "logoText": "ATHORA",
+    "logoMark": "A",
+    "logoImage": ""
+  },
+  "announcement": {
+    "show": true,
+    "text": "Free shipping on orders over $100 - Welcome to ATHORA"
+  },
+  "nav": [
+    {
+      "label": "Home",
+      "url": "/",
+      "show": true
+    },
+    {
+      "label": "Shop",
+      "url": "/collection",
+      "show": true
+    },
+    {
+      "label": "About",
+      "url": "/about",
+      "show": true
+    },
+    {
+      "label": "Blog",
+      "url": "/blog",
+      "show": true
+    },
+    {
+      "label": "Contact",
+      "url": "/contact",
+      "show": true
+    }
+  ],
+  "theme": {
+    "primary": "#3A0088",
+    "accent": "#4A2B3D",
+    "buttonRadius": "50px",
+    "cardRadius": "22px",
+    "font": "Inter",
+    "animations": true
+  },
+  "home": {
+    "sections": [
+      {
+        "id": "hero",
+        "type": "hero",
+        "show": true,
+        "title": "Active training collection",
+        "subtitle": "Elevate every workout with high-performance essentials designed for motion, recovery and daily confidence.",
+        "summary": "Premium activewear for studio, run, gym and recovery.",
+        "buttonText": "Shop collection",
+        "buttonLink": "/collection",
+        "slides": [
+          "assets/hero.png",
+          "assets/activity-run.png",
+          "assets/zoom-image.png"
+        ]
+      },
+      {
+        "id": "categories",
+        "type": "categories",
+        "show": true,
+        "title": "Shop by category",
+        "subtitle": "Find focused pieces for every routine without losing the polished ATHORA feel.",
+        "buttonText": "All categories",
+        "buttonLink": "/collection"
+      },
+      {
+        "id": "perform",
+        "type": "banner",
+        "show": true,
+        "title": "Built to perform, designed to inspire",
+        "subtitle": "Sweat-wicking, ultra-flexible and shaped for every workout.",
+        "buttonText": "Shop now",
+        "buttonLink": "/collection",
+        "image": "assets/hero.png"
+      },
+      {
+        "id": "marquee",
+        "type": "marquee",
+        "show": true,
+        "items": [
+          "Performance",
+          "Premium activewear",
+          "Move better",
+          "Studio ready"
+        ]
+      },
+      {
+        "id": "products",
+        "type": "products",
+        "show": true,
+        "title": "Science-backed essentials",
+        "subtitle": "Best-selling pieces engineered for support, breathability and shape retention.",
+        "filters": [
+          "All",
+          "Featured",
+          "New",
+          "Bestseller",
+          "Sale"
+        ]
+      },
+      {
+        "id": "look",
+        "type": "look",
+        "show": true,
+        "title": "Shop the look",
+        "subtitle": "A refined set for morning pilates, afternoon errands and everything in between.",
+        "buttonText": "View outfit",
+        "buttonLink": "/product?id=p7",
+        "image": "assets/zoom-image.png",
+        "productId": "p7"
+      },
+      {
+        "id": "offer",
+        "type": "offer",
+        "show": true,
+        "title": "Exclusive offers on performance layers",
+        "subtitle": "Limited-time savings on selected ATHORA essentials.",
+        "buttonText": "Shop sale",
+        "buttonLink": "/collection?filter=sale",
+        "image": "assets/activity-gym.png",
+        "endsAt": "2026-12-31"
+      },
+      {
+        "id": "activity",
+        "type": "activity",
+        "show": true,
+        "title": "Shop by activity",
+        "subtitle": "Purpose-built pieces for the way you move."
+      },
+      {
+        "id": "reviews",
+        "type": "reviews",
+        "show": true,
+        "title": "Loved by our community",
+        "subtitle": "Real notes from customers who train, stretch and reset in ATHORA.",
+        "items": [
+          {
+            "name": "Anna",
+            "rating": 5,
+            "title": "Super comfortable",
+            "text": "The jumpsuit feels soft but supportive. It moves with me and never feels tight.",
+            "product": "Breezeflow midi jumpsuit",
+            "price": 120
+          },
+          {
+            "name": "May",
+            "rating": 5,
+            "title": "Cute and practical",
+            "text": "The fabric dries quickly after workouts and still looks polished for the rest of the day.",
+            "product": "Coral sports bra",
+            "price": 180
+          },
+          {
+            "name": "Nicole",
+            "rating": 5,
+            "title": "Sporty and stylish",
+            "text": "I wear it from class to gym without changing. It is comfortable, clean and easy.",
+            "product": "Breeze active tank",
+            "price": 120
+          },
+          {
+            "name": "Tramy",
+            "rating": 5,
+            "title": "Breathable and confident",
+            "text": "The mesh top stays airy through cardio and keeps its shape through every session.",
+            "product": "Enduro mesh top",
+            "price": 90
+          }
+        ]
+      },
+      {
+        "id": "stories",
+        "type": "stories",
+        "show": true,
+        "title": "Latest stories",
+        "subtitle": "Short reads for better training, recovery and wardrobe planning.",
+        "buttonText": "Read the journal",
+        "buttonLink": "/blog"
+      }
+    ]
+  },
+  "categories": [
+    {
+      "id": "all",
+      "name": "All products",
+      "slug": "all",
+      "image": "assets/hero.png",
+      "summary": "Shop the entire ATHORA range.",
+      "show": true
+    },
+    {
+      "id": "best",
+      "name": "Best sellers",
+      "slug": "best",
+      "image": "assets/activity-run.png",
+      "summary": "Top picks loved by our community.",
+      "show": true
+    },
+    {
+      "id": "yoga",
+      "name": "Yoga and Pilates",
+      "slug": "yoga",
+      "image": "assets/activity-pilates.png",
+      "summary": "Soft, flexible essentials for the mat.",
+      "show": true
+    },
+    {
+      "id": "running",
+      "name": "Running gear",
+      "slug": "running",
+      "image": "assets/activity-run.png",
+      "summary": "Lightweight pieces for the run.",
+      "show": true
+    },
+    {
+      "id": "leggings",
+      "name": "Leggings",
+      "slug": "leggings",
+      "image": "assets/jumpsuit.png",
+      "summary": "Compression and comfort for every workout.",
+      "show": true
+    },
+    {
+      "id": "joggers",
+      "name": "Joggers",
+      "slug": "joggers",
+      "image": "assets/activity-casual.png",
+      "summary": "Cloud-feel sweatpants for off days.",
+      "show": true
+    },
+    {
+      "id": "outerwear",
+      "name": "Outerwear",
+      "slug": "outerwear",
+      "image": "assets/activity-gym.png",
+      "summary": "Layer up for cool sessions.",
+      "show": true
+    },
+    {
+      "id": "accessories",
+      "name": "Accessories",
+      "slug": "accessories",
+      "image": "assets/category-1.png",
+      "summary": "Caps, bottles, bands and more.",
+      "show": true
+    }
+  ],
+  "footer": {
+    "show": true,
+    "newsletter": true,
+    "newsletterTitle": "Sign up now",
+    "newsletterText": "Stay in the loop with exclusive offers and product previews.",
+    "social": [
+      {
+        "label": "Facebook",
+        "url": "#",
+        "icon": "f"
+      },
+      {
+        "label": "Instagram",
+        "url": "#",
+        "icon": "i"
+      },
+      {
+        "label": "YouTube",
+        "url": "#",
+        "icon": "y"
+      },
+      {
+        "label": "X",
+        "url": "#",
+        "icon": "x"
+      }
+    ],
+    "columns": [
+      {
+        "show": true,
+        "title": "Help",
+        "links": [
+          {
+            "label": "Terms of Service",
+            "url": "#"
+          },
+          {
+            "label": "Refund Policy",
+            "url": "#"
+          },
+          {
+            "label": "Privacy Policy",
+            "url": "#"
+          },
+          {
+            "label": "Shipping Policy",
+            "url": "#"
+          }
+        ]
+      },
+      {
+        "show": true,
+        "title": "About",
+        "links": [
+          {
+            "label": "FAQ",
+            "url": "/about"
+          },
+          {
+            "label": "Our story",
+            "url": "/about"
+          },
+          {
+            "label": "Contact",
+            "url": "/contact"
+          },
+          {
+            "label": "Blog",
+            "url": "/blog"
+          }
+        ]
+      }
+    ],
+    "blocks": [
+      {
+        "show": true,
+        "title": "Fast free shipping",
+        "text": "Free shipping on orders of $100 or more."
+      },
+      {
+        "show": true,
+        "title": "Easy returns",
+        "text": "Simple returns within 14 days of delivery."
+      },
+      {
+        "show": true,
+        "title": "Secure checkout",
+        "text": "Payments are processed securely."
+      },
+      {
+        "show": true,
+        "title": "Customer care",
+        "text": "Support is available when you need it."
+      }
+    ],
+    "copyright": "Copyright 2026 ATHORA. All rights reserved."
+  },
+  "contact": {
+    "email": "hello@athora.com",
+    "phone": "+1 (555) 234-1290",
+    "address": "221B Performance Ave, New York, NY 10001"
+  },
+  "about": {
+    "title": "Born to move, designed to inspire",
+    "intro": "ATHORA is a premium activewear brand built around performance fabrics, considered silhouettes and a community that loves to move.",
+    "mission": "Our mission is to empower every body with high-performance gear that blends support, style, comfort and innovation.",
+    "image": "assets/zoom-image.png",
+    "values": [
+      {
+        "title": "Performance",
+        "text": "Every piece is engineered for motion, from yoga flows to high-intensity intervals."
+      },
+      {
+        "title": "Responsible design",
+        "text": "We favor durable materials, cleaner finishes and low-waste production choices."
+      },
+      {
+        "title": "Community",
+        "text": "We design with feedback from athletes, trainers and everyday movers."
+      }
+    ]
+  }
+}

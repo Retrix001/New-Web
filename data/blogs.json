@@ -1,0 +1,32 @@
+[
+  {
+    "id": "b1",
+    "title": "How to build a studio-to-street capsule",
+    "image": "assets/activity-pilates.png",
+    "summary": "A short guide to choosing activewear that works for training, errands and recovery.",
+    "content": "Start with a supportive base layer, add a breathable top, then finish with an easy outer layer. Choose colors that mix cleanly and fabrics that keep their shape after movement.",
+    "author": "ATHORA Studio",
+    "date": "2026-04-24",
+    "show": true
+  },
+  {
+    "id": "b2",
+    "title": "The fabric details that matter during high-impact training",
+    "image": "assets/activity-run.png",
+    "summary": "Compression, moisture management and seam placement can change how confident you feel.",
+    "content": "For high-impact sessions, look for bonded seams, secure straps and fabrics that recover quickly. Good support should feel close without feeling restrictive.",
+    "author": "Mira Wells",
+    "date": "2026-04-25",
+    "show": true
+  },
+  {
+    "id": "b3",
+    "title": "Recovery dressing for better off-days",
+    "image": "assets/activity-casual.png",
+    "summary": "Soft layers and relaxed fits help your body reset while keeping your day polished.",
+    "content": "Recovery outfits should be warm, breathable and easy to move in. Joggers, tanks and soft layers can support rest without looking unfinished.",
+    "author": "ATHORA Journal",
+    "date": "2026-04-26",
+    "show": true
+  }
+]
